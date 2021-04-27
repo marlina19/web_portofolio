@@ -1,0 +1,16 @@
+---
+application:
+  name: "web-portofolio"
+  project: "hugo"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "index"
+    size: "50"
+    type: "fast_ssd"
+    mount_point: "/mnt/index"
+routers:
+- name: "main-web-portofolio"
+  routes:
+  - application_name: "web-portofolio"
+    paths:
+    - "/*"
